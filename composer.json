@@ -1,0 +1,14 @@
+{
+    "name": "vendor/cpav1",
+    "description": "CPA",
+    "type": "project",
+    "license": "SFIT",
+    "authors": [
+        {
+            "name": "Sandeep Yadav",
+            "email": "sandeepyadav.ry1397@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
