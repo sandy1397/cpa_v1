@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "config.php";
+//require_once "config.php";
 $link=mysqli_connect("remotemysql.com","V1HwKqbZg5","nasykhl0YZ","V1HwKqbZg5");
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
