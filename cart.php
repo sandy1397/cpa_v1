@@ -1,6 +1,6 @@
 <?php
     $pid=$_GET['id'];
-$link=mysqli_connect("localhost","root","","pcassembler");
+$link=mysqli_connect("remotemysql.com","V1HwKqbZg5","nasykhl0YZ","V1HwKqbZg5");
 // Check connection
 if (mysqli_connect_errno())
 {

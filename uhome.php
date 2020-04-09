@@ -1,5 +1,5 @@
 <?php
-$link=mysqli_connect("localhost","root","","pcassembler");
+$link=mysqli_connect("remotemysql.com","V1HwKqbZg5","nasykhl0YZ","V1HwKqbZg5");
 // Check connection
 if (mysqli_connect_errno())
 {
@@ -58,7 +58,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 		  <li><a href="https://goo.gl/forms/B1CG496RHPVRFG753">Feedback</a></li>
 
 		  <li style="float:right"><a class="active" href="logout.php">Logout</a></li>
-		  <li style="float:right; color: white;"><a class="active" href="profile.php"> 
+		  <li style="float:right; color: white;"><a class="active" href="profile.php">
 		  	<?php echo $row['username'];?>
 		</a></li>
 		  <li style="float:right"><a href="car.php"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
@@ -71,7 +71,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 <br><br>
 <!-- PROCESSOR -->
 		<h4> <b><u> PROCESSOR </u></b></h4>
-		<table border="1" style="width: 100%; table-layout: auto;">	
+		<table border="1" style="width: 100%; table-layout: auto;">
 			<tr>
 				<th> Names</th>
 				<th>Features</th>
@@ -82,14 +82,14 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 			<?php
 				$id=$row;
 				while ($result1 =  mysqli_fetch_assoc($processor)) {
-				    $part=$result1['ID']; 
+				    $part=$result1['ID'];
 				echo "<tr>";
 					echo "<td>".$result1['Name']."</td>";
 					echo "<td>".$result1['Feature']."</td>";
 					echo "<td>".$result1['Price']."</td>";
 						echo "<td>"."<a href='cart.php?id=$part'><button class='btn btn-success'>Add</button></a>"."</td>";
 				echo "</tr>";
-					
+
 				echo "</tr>";
 				}
 			?>
@@ -98,7 +98,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 <!-- MOTHERBOARD -->
 			<br>
 		<h4> <b><u> MOTHERBOARD </u></b></h4>
-		<table border="1" style="width: 100%; table-layout: auto;">	
+		<table border="1" style="width: 100%; table-layout: auto;">
 			<tr>
 				<th> Names</th>
 				<th>Features</th>
@@ -109,7 +109,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 			<?php
 				while ($result2 =  mysqli_fetch_assoc($motherboard)) {
 				echo "<tr>";
-				$part=$result2['ID']; 
+				$part=$result2['ID'];
 					echo "<td>".$result2['Name']."</td>";
 					echo "<td>".$result2['Feature']."</td>";
 					echo "<td>".$result2['Price']."</td>";
@@ -122,7 +122,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 <!-- RAM -->
 			<br>
 		<h4> <b><u> RAM </u></b></h4>
-		<table border="1" style="width: 100%; table-layout: auto;">	
+		<table border="1" style="width: 100%; table-layout: auto;">
 			<tr>
 				<th> Names</th>
 				<th>Features</th>
@@ -133,7 +133,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 			<?php
 			$id=$row["id"];
 				while ($result3 =  mysqli_fetch_assoc($ram)) {
-					$part=$result3['ID']; 
+					$part=$result3['ID'];
 				echo "<tr>";
 					echo "<td>".$result3['Name']."</td>";
 					echo "<td>".$result3['Feature']."</td>";
@@ -147,7 +147,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 <!-- STORAGE -->
 			<br>
 		<h4> <b><u> STORAGE </u></b></h4>
-		<table border="1" style="width: 100%; table-layout: auto;">	
+		<table border="1" style="width: 100%; table-layout: auto;">
 			<tr>
 				<th> Names</th>
 				<th>Features</th>
@@ -157,7 +157,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 			</tr>
 			<?php
 				while ($result4 =  mysqli_fetch_assoc($storage)) {
-					$part=$result4['ID']; 
+					$part=$result4['ID'];
 				echo "<tr>";
 					echo "<td>".$result4['Name']."</td>";
 					echo "<td>".$result4['Feature']."</td>";
@@ -171,7 +171,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 <!-- GRAPGIC CARD -->
 			<br>
 		<h4> <b><u> GRAPHIC CARD </u></b></h4>
-		<table border="1" style="width: 100%; table-layout: auto;">	
+		<table border="1" style="width: 100%; table-layout: auto;">
 			<tr>
 				<th> Names</th>
 				<th>Features</th>
@@ -181,7 +181,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 			</tr>
 			<?php
 				while ($result5 =  mysqli_fetch_assoc($gc)) {
-					$part=$result5['ID']; 
+					$part=$result5['ID'];
 				echo "<tr>";
 					echo "<td>".$result5['Name']."</td>";
 					echo "<td>".$result5['Feature']."</td>";
@@ -195,7 +195,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 <!-- CABINET -->
 			<br>
 		<h4> <b><u> CABINET </u></b></h4>
-		<table border="1" style="width: 100%; table-layout: auto;">	
+		<table border="1" style="width: 100%; table-layout: auto;">
 			<tr>
 				<th> Names</th>
 				<th>Features</th>
@@ -205,7 +205,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 			</tr>
 			<?php
 				while ($result6 =  mysqli_fetch_assoc($cabinet)) {
-					$part=$result6['ID']; 
+					$part=$result6['ID'];
 				echo "<tr>";
 					echo "<td>".$result6['Name']."</td>";
 					echo "<td>".$result6['Feature']."</td>";
@@ -219,7 +219,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 <!-- OPTICAL DRIVE -->
 			<br>
 		<h4> <b><u> OPTICAL DRIVE </u></b></h4>
-		<table border="1" style="width: 100%; table-layout: auto;">	
+		<table border="1" style="width: 100%; table-layout: auto;">
 			<tr>
 				<th> Names</th>
 				<th>Features</th>
@@ -229,7 +229,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 			</tr>
 			<?php
 				while ($result7 =  mysqli_fetch_assoc($od)) {
-					$part=$result7['ID']; 
+					$part=$result7['ID'];
 				echo "<tr>";
 					echo "<td>".$result7['Name']."</td>";
 					echo "<td>".$result7['Feature']."</td>";
@@ -242,7 +242,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 <!-- MONITOR -->
 			<br>
 		<h4> <b><u> MONITOR </u></b></h4>
-		<table border="1" style="width: 100%; table-layout: auto;">	
+		<table border="1" style="width: 100%; table-layout: auto;">
 			<tr>
 				<th> Names</th>
 				<th>Features</th>
@@ -252,7 +252,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 			</tr>
 			<?php
 				while ($result8 =  mysqli_fetch_assoc($monitor)) {
-					$part=$result8['ID']; 
+					$part=$result8['ID'];
 				echo "<tr>";
 					echo "<td>".$result8['Name']."</td>";
 					echo "<td>".$result8['Feature']."</td>";
@@ -266,7 +266,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 <!-- KEYBOARD -->
 			<br>
 		<h4> <b><u> KEYBOARD </u></b></h4>
-		<table border="1" style="width: 100%; table-layout: auto;">	
+		<table border="1" style="width: 100%; table-layout: auto;">
 			<tr>
 				<th> Names</th>
 				<th>Features</th>
@@ -276,7 +276,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 			</tr>
 			<?php
 				while ($result9 =  mysqli_fetch_assoc($keyb)) {
-					$part=$result9['ID']; 
+					$part=$result9['ID'];
 				echo "<tr>";
 					echo "<td>".$result9['Name']."</td>";
 					echo "<td>".$result9['Feature']."</td>";
@@ -290,7 +290,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 <!-- MOUSE -->
 			<br>
 		<h4> <b><u> MOUSE </u></b></h4>
-		<table border="1" style="width: 100%; table-layout: auto;">	
+		<table border="1" style="width: 100%; table-layout: auto;">
 			<tr>
 				<th> Names</th>
 				<th>Features</th>
@@ -300,7 +300,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 			</tr>
 			<?php
 				while ($result10 =  mysqli_fetch_assoc($mouse)) {
-					$part=$result10['ID']; 
+					$part=$result10['ID'];
 				echo "<tr>";
 					echo "<td>".$result10['Name']."</td>";
 					echo "<td>".$result10['Feature']."</td>";
@@ -312,7 +312,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 			?>
 			</table>
 
-			
+
 </div>
 
 <br><br>

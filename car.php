@@ -1,5 +1,5 @@
 <?php
-$link=mysqli_connect("localhost","root","","pcassembler");
+$link=mysqli_connect("remotemysql.com","V1HwKqbZg5","nasykhl0YZ","V1HwKqbZg5");
 // Check connection
 if (mysqli_connect_errno())
 {
@@ -55,7 +55,7 @@ $prec=mysqli_query($link,"select * from cart as cr,component as c where cr.Cid=$
 		  <li><a href="https://goo.gl/forms/B1CG496RHPVRFG753">Feedback</a></li>
 
 		  <li style="float:right"><a class="active" href="logout.php">Logout</a></li>
-		  <li style="float:right; color: white;"><a class="active" href="profile.php"> 
+		  <li style="float:right; color: white;"><a class="active" href="profile.php">
 		  	<?php echo $row['username'];?>
 		</a></li>
 		  <li style="float:right"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
@@ -66,7 +66,7 @@ $prec=mysqli_query($link,"select * from cart as cr,component as c where cr.Cid=$
 	<div class="custom-container container">
 
 	<h3> Order Details </h3>
-	<table border="1" style="width: 100%; table-layout: auto;">	
+	<table border="1" style="width: 100%; table-layout: auto;">
 			<tr>
 				<th> Prodcut </th>
 				<th> Price </th>
@@ -77,7 +77,7 @@ $prec=mysqli_query($link,"select * from cart as cr,component as c where cr.Cid=$
 			$total=0;
 
 				while ($res=  mysqli_fetch_assoc($prec)) {
-				 $part=$res['ID'];    
+				 $part=$res['ID'];
 				echo "<tr>";
 					echo "<td>".$res['Name']."</td>";
 					echo "<td>".$res['Price']."</td>";

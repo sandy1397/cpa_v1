@@ -1,5 +1,5 @@
 <?php
-$link=mysqli_connect("localhost","root","","pcassembler");
+$link=mysqli_connect("remotemysql.com","V1HwKqbZg5","nasykhl0YZ","V1HwKqbZg5");
 // Check connection
 if (mysqli_connect_errno())
 {
@@ -50,7 +50,7 @@ $q1 = mysqli_query($link,"insert into users ('name','phone_no','email_id','addre
 		  <li><a href="https://goo.gl/forms/B1CG496RHPVRFG753">Feedback</a></li>
 
 		  <li style="float:right"><a class="active" href="logout.php">Logout</a></li>
-		  <li style="float:right; color: white;"><a class="active" href="profile.php"> 
+		  <li style="float:right; color: white;"><a class="active" href="profile.php">
 		  	<?php echo $row['username'];?>
 		</a></li>
 		  <li style="float:right"><a href="car.php"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
@@ -60,7 +60,7 @@ $q1 = mysqli_query($link,"insert into users ('name','phone_no','email_id','addre
 <br>
 	<div class="custom-container container">
 		<h3> Enter Your Details </h3>
-	
+
 	<table>
 		<tr><td> NAME: </td>
 			<td><input type="text" name="uname" placeholder="Enter your Name"> </td>
@@ -79,17 +79,17 @@ $q1 = mysqli_query($link,"insert into users ('name','phone_no','email_id','addre
 		</tr>
 
 		<tr><td> USER Type </td>
-			<td> <select name="utype"> 
+			<td> <select name="utype">
 			<option selected="" value="default">
 				<i>Please select a option! </i>
 			</option>
 			<option value="IND">Indvidual</option>
 			<option value="COR">Corporation</option>
-			
+
 		</select> </td>
 		</tr>
 
-		
+
 	</table>
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 		<input type="submit" name="update">
