@@ -1,7 +1,7 @@
 <?php
 // Include config file
 require_once "config.php";
-
+$link=mysqli_connect("remotemysql.com","V1HwKqbZg5","nasykhl0YZ","V1HwKqbZg5");
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
@@ -157,7 +157,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </form>
     </div>
  </div>
-        
+
 
 </body>
 </html>
