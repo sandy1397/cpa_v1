@@ -117,7 +117,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	<ul>
 		<div class="custom-container container">
 		  <li><a href="home.php">Home</a></li>
-		  <li><a href="build.php">Build Rig</a></li>
+		  <li><a href="build.php">Products</a></li>
 		  <li><a href="about.php">About</a></li>
 		  <li><a href="https://goo.gl/forms/B1CG496RHPVRFG753">Feedback</a></li>
 
@@ -144,7 +144,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+            <p>Don't have an account? <a href="register2.php">Sign up now</a>.</p>
         </form>
     </div>
 	</div>

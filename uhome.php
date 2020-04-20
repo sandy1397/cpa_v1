@@ -53,7 +53,7 @@ $mouse = mysqli_query($link,"SELECT * FROM component where Type='Mouse'");
 	<ul>
 		<div class="custom-container container">
 		  <li><a href="uhome.php">Home</a></li>
-		  <li><a href="uhome.php">Build Rig</a></li>
+		  <li><a href="uhome.php">Products</a></li>
 		  <li><a href="about.php">About</a></li>
 		  <li><a href="https://goo.gl/forms/B1CG496RHPVRFG753">Feedback</a></li>
 

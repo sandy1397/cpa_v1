@@ -26,10 +26,10 @@
 	<ul>
 		<div class="custom-container container">
 		  <li><a href="home.php">Home</a></li>
-		  <li><a href="build.php">Build Rig</a></li>
+		  <li><a href="build.php">Products</a></li>
 		  <li><a href="about.php">About</a></li>
 		  <li><a href="https://goo.gl/forms/B1CG496RHPVRFG753">Feedback</a></li>
-		
+
 		  <li style="float:right"><a class="active" href="#about">Login</a></li>
 		  <li style="float:right"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
 		</div>
@@ -37,9 +37,9 @@
 
 	<div class="custom-container container">
 		<!-- Work here -->
-		
+
 	</div>
-		
+
 
 </body>
 </html>

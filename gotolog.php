@@ -24,7 +24,7 @@
 	<ul>
 		<div class="custom-container container">
 		  <li><a href="home.php">Home</a></li>
-		  <li><a href="build.php">Build Rig</a></li>
+		  <li><a href="build.php">Products</a></li>
 		  <li><a href="about.php">About</a></li>
 		  <li><a href="https://goo.gl/forms/B1CG496RHPVRFG753">Feedback</a></li>
 

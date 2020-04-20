@@ -44,12 +44,12 @@ $row = mysqli_fetch_assoc($result);
 	<ul>
 		<div class="custom-container container">
 		  <li><a href="uhome.php">Home</a></li>
-		  <li><a href="uhome.php">Build Rig</a></li>
+		  <li><a href="uhome.php">Products</a></li>
 		  <li><a href="about.php">About</a></li>
 		  <li><a href="https://goo.gl/forms/B1CG496RHPVRFG753">Feedback</a></li>
 
 		  <li style="float:right"><a class="active" href="logout.php">Logout</a></li>
-		  <li style="float:right; color: white;"><a class="active" href="profile.php"> 
+		  <li style="float:right; color: white;"><a class="active" href="profile.php">
 		  	<?php echo $row['username'];?>
 		</a></li>
 		  <li style="float:right"><a href="car.php"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
@@ -64,7 +64,7 @@ $row = mysqli_fetch_assoc($result);
 		<h4> Email ID : sandeep@gmail.com </h4>
 		<h4> Email ID : swapnilver@gmail.com </h4>
 
-		
+
 
 </div>
 

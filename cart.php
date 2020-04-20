@@ -58,7 +58,7 @@ $prec=mysqli_query($link,"select * from cart as cr,component as c where cr.Cid=$
 	<ul>
 		<div class="custom-container container">
 		  <li><a href="uhome.php">Home</a></li>
-		  <li><a href="uhome.php">Build Rig</a></li>
+		  <li><a href="uhome.php">Products</a></li>
 		  <li><a href="about.php">About</a></li>
 		  <li><a href="https://goo.gl/forms/B1CG496RHPVRFG753">Feedback</a></li>
 

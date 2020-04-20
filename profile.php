@@ -45,7 +45,7 @@ $q1 = mysqli_query($link,"insert into users ('name','phone_no','email_id','addre
 	<ul>
 		<div class="custom-container container">
 		  <li><a href="uhome.php">Home</a></li>
-		  <li><a href="uhome.php">Build Rig</a></li>
+		  <li><a href="uhome.php">Products</a></li>
 		  <li><a href="about.php">About</a></li>
 		  <li><a href="https://goo.gl/forms/B1CG496RHPVRFG753">Feedback</a></li>
 
