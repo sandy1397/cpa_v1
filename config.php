@@ -2,9 +2,9 @@
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'remotemysql.com');
-define('DB_USERNAME', 'V1HwKqbZg5');
-define('DB_PASSWORD', 'nasykhl0YZ');
-define('DB_NAME', 'V1HwKqbZg5');
+define('DB_USERNAME', 'f2kKbvyCmF');
+define('DB_PASSWORD', 'kolDZNu5sO');
+define('DB_NAME', 'f2kKbvyCmF');
 
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
