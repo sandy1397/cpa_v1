@@ -100,6 +100,7 @@ $prec=mysqli_query($link,"select * from cart as cr,component as c where cr.Cid=$
 
 			Total: <?php echo $total; ?><br>
 			<a href="order.php"><button>Order</button></a>
+      <a href="uhome.php"><button>Back</button></a>
 
 	</div>
 
