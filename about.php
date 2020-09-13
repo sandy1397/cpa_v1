@@ -1,5 +1,6 @@
 <?php
-$link=mysqli_connect("localhost","root","","pcassembler");
+//$link=mysqli_connect("localhost","root","","pcassembler");
+require_once "config.php";
 // Check connection
 if (mysqli_connect_errno())
 {

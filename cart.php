@@ -1,6 +1,8 @@
 <?php
+require_once "config.php";
     $pid=$_GET['id'];
-$link=mysqli_connect("remotemysql.com","V1HwKqbZg5","nasykhl0YZ","V1HwKqbZg5");
+//$link=mysqli_connect("remotemysql.com","V1HwKqbZg5","nasykhl0YZ","V1HwKqbZg5");
+
 // Check connection
 if (mysqli_connect_errno())
 {

@@ -1,5 +1,6 @@
 <?php
-$link=mysqli_connect("remotemysql.com","V1HwKqbZg5","nasykhl0YZ","V1HwKqbZg5");
+//$link=mysqli_connect("remotemysql.com","V1HwKqbZg5","nasykhl0YZ","V1HwKqbZg5");
+require_once "config.php";
 // Check connection
 if (mysqli_connect_errno())
 {
