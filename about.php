@@ -63,7 +63,7 @@ $row = mysqli_fetch_assoc($result);
 		<h3> Contact US <h3>
 		<h4> Email ID : raxitsingh@gmail.com </h4>
 		<h4> Email ID : sandeep@gmail.com </h4>
-		<h4> Email ID : swapnilver@gmail.com </h4>
+		
 
 
 
